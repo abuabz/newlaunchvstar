@@ -1,13 +1,160 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+*{
+  font-family: 'Raleway', sans-serif;
+}
+html{
+height: 100%;
+
+}
+body{
+ 
+    background: linear-gradient(rgba(0, 0, 0, 1),rgb(0, 0, 0)) ,url(./Assets/Images/bgredline.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+#navImg{
+  font-weight: 900;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: inherit;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link{
+  padding: 5px;
+  height: fit-content;
+  transition: .5s;
+  margin: 10px;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+  background: #ffffff47;
+  border-radius: 7px;
+  padding:5px;
+  height: fit-content;
+  transition: .5s;
+}
+.maindiv{
+  /* height: 600px; */
+  
+}
+#image01 {
+  /* border-radius: 6px; */
+  width: 100%;
+  height: calc(100vh - 300px);
+
+}
+#imagedesk {
+  /* border-radius: 6px;  */
+    /* width: 74%; */
+    /* height: calc(100vh - 226px); */
+    height: 100%;
+    /* position: absolute; */
+    /* right: 13%; */
+    /* bottom: 6%; */
+}
+.imgdivv{
+    /* border-radius: 6px;  */
+    width: 74%;
+    /* height: calc(100vh - 226px); */
+    height: 61%;
+    position: absolute;
+    right: 13%;
+    background-color: #f15a2d;
+    bottom: 6%;
+}
+.deskmain{
+  /* background: rgb(132, 68, 68); */
+  width: 100%;
+  height: 100%;
+  height: calc(100vh - 70px);
+}
+.comingsoondiv {
+  width: 15%;
+  background: white;
+  position: absolute;
+  left: 10%;
+  height: 40%;
+  text-align: left;
+  padding-left: 12px;
+}
+#comingsoontext {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-weight: bold;
+  font-size: 11vh;
+  position: absolute;
+  color: #f15a2d;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+.leftdotdiv {
+  width: 75px;
+  background: white;
+  position: absolute;
+  max-height: 45%;
+  padding: 10px;
+  text-align: left;
+  bottom: 0;
+  overflow: hidden;   
+}
+#leftdots{
+  font-weight: bold;
+  font-size: 2rem;
+  color: #f15a2d;
+  font-family: fangsong;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+.rightdotdiv {
+  width: 7%;
+  background: rgba(255, 255, 255, 0);
+  position: absolute;
+  max-height: 67%;
+  /* padding: 20px; */
+  text-align: left;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  top: 5%;
+}
+#rightdots{
+  font-weight: bold;
+  font-size: 3rem;
+  color: #f15a2d;
+  font-family: fangsong;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+/* Add this to your App.css file */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+@media (min-width: 992px){
+  .navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: flex-end;
+}
+}
+
+@media (max-width: 700px){
+  #image01 {
+    border-radius: 6px;
+    width: 90%;
+    height: 650px;
+    /* border: solid 1px white; */
+    /* object-fit: cover; */
+  }
+  
 }
